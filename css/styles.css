@@ -1,0 +1,25 @@
+/* section style */
+@import url(navbar.css);
+@import url(addProduct.css);
+@import url(products.css);
+@import url(footer.css);
+
+/* Palette */
+:root{
+  --primary-purple: #000000;
+  --secondary-purple: #14213d;
+  --background:#e5e5e5;
+  --hot-pink: #B1AFAF;
+  --soft-blue: #fca311;
+  --text-white: #fafafe;
+  --text-black: #130D20;
+  /*alternative #F7F7FD*/
+}
+/* rem text sized */
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "Kode Mono", monospace;
+}

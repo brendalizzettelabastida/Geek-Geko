@@ -1,0 +1,118 @@
+/* Sección del formulario para agregar producto */
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+  padding-top: 6rem;
+}
+.modal-content{
+  width: 80%;
+  margin: 5% auto;
+}
+.close{
+  float: right;
+  color: var(--primary-purple);
+  font-size: 4rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+.close:hover, .close:focus{
+  color: var(--soft-blue);
+  text-decoration: none;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.add-product{
+  background: var(--hot-pink);
+  color: var(--text-black);
+  border-radius: 1rem;
+  padding: 5rem 3rem;
+}
+.add-product__title{
+  color: var(--text-black);
+  font-size: 2.4rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.product-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.product-form__input{
+  width: 90%;
+  height: 3rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.product-form__file{
+  width: auto;
+  height: auto;
+  background: var(--secondary-purple);
+  color: var(--text-white);
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+}
+.product-form__file:hover, .product-form__file:focus,
+.button__save:hover, .button__save:focus,
+.button__clear:hover, .button__clear:focus{
+  transform: scale(1.1);
+  box-shadow: 0.5rem 0.5rem 0.5rem var(--primary-purple);
+  cursor: pointer;
+}
+.input-addFile{
+  display: none;
+}
+.form-buttons{
+  display: flex;
+  gap: 2rem;
+}
+.button__save, .button__clear{
+  width: 10rem;
+  height: 3.4rem;
+  border-radius: 0.8rem;
+  color: var(--text-white);
+  border: 0.2rem solid var(--text-white);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.button__save{
+  background: var(--soft-blue);
+}
+.button__clear{
+  background: none;
+}
+
+
+/* Media query para tablet */
+@media (600px <= width <= 1000px){
+  .modal-content{
+    width: 44rem;
+  }
+  .add-product__title{
+    font-size: 2.6rem;
+  }
+}
+
+
+/* Media query for desktop */
+@media (width > 1000px){
+  .modal-content{
+    width: 50rem;
+  }
+  .add-product__title{
+    font-size: 2.8rem;
+  }
+}

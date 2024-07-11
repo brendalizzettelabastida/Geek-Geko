@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura Geek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="navbar__title">🕹️Geeko geek🎮</h1>
+    </nav>
+  </header>
+  <main>
+    <section class="products">
+      <h2 class="products__title">Mis productos</h2>
+      <ul class="products__list" data-ul>
+         
+        <li class="product__card">
+          <img class="product__img" src="assets/img/gameboy.png" alt="Imagen de Gameboy classic">
+          <h3 class="product__name">Gameboy classic</h3>
+          <div class="product__description">
+            <p class="product__description__price">$ 300.00</p>
+            <img class="product__description__delete" src="assets/icons/icon-trash.png" alt="Ícono de basurero">
+          </div>
+        </li>
+
+        <li class="product__card">
+          <img class="product__img" src="assets/img/berserk.jpg" alt="Imagen de Gameboy classic">
+          <h3 class="product__name">Manga Berserk</h3>
+          <div class="product__description">
+            <p class="product__description__price">$ 150.00</p>
+            <img class="product__description__delete" src="assets/icons/icon-trash.png" alt="Ícono de basurero">
+          </div>
+        </li>
+        
+      </ul>
+      <button class="products__btn-add">Agregar producto</button>
+    </section>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <section class="add-product">
+          <h2 class="add-product__title">Agregar Producto</h2>
+          <form class="product-form" action="" data-form>
+            <input class="product-form__input" name="name" id="name" type="text" minlength="5" maxlength="20" placeholder="Nombre" required>
+            <input class="product-form__input" name="price" id="price" type="number" step="0.01" placeholder="Precio" required>
+            <label class="product-form__file" for="img">Clic para subir imagen</label>
+            <input class="input-addFile" name="img" id="img" type="file" accept="image/*" required>
+            <div class="form-buttons">
+              <input class="button__save" type="submit" value="Guardar">
+              <input class="button__clear" type="submit" value="Limpiar">
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-info">
+      <h4 class="footer__title">B.L.L.M</h4>
+      <p class="footer__year">2024</p>
+    </div>
+    <ul class="footer-network">
+      <li class="footer-network__item">
+        <a href="https://github.com/brendalizzettelabastida"><img class="footer-network__item__icon" src="assets/icons/github.png" alt="Github"></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

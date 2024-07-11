@@ -1,0 +1,15 @@
+/* Sección del navbar */
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  background: var(--primary-purple);
+}
+.navbar__title{
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: var(--text-white);
+}
+
